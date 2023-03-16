@@ -1,13 +1,46 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <title>Ejemplo de página web para un negocio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Nombre del negocio</h1>
+      <nav>
+        <ul>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="productos">
+        <h2>Productos</h2>
+        <ul>
+          <li>Producto 1</li>
+          <li>Producto 2</li>
+          <li>Producto 3</li>
+        </ul>
+      </section>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Para más información, por favor contáctenos:</p>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre"><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje"></textarea><br>
+
+          <input type="submit" value="Enviar">
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
