@@ -4,45 +4,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HDF</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts.js"></script>
   </head>
   <body>
     <header>
-      <h1>HDF proyectos y soluciones</h1>
-      <nav>
-        <ul>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
+      <img src="img/logo.png"></img>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Buscar...">
+        <button type="button" id="search-button">Buscar</button>
+      </div>
     </header>
+    <div class="under-top">
+        <nav>
+            <ul>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#sede">SEDE</a></li>
+                <li><a href="#productos">PRODUCTOS</a></li>
+                <li><a href="#contactos">CONTACTANOS</a></li>
+            </ul>
+          </nav>
+    </div>
 
     <main>
-      <section id="productos">
-        <h2>Productos</h2>
-        <ul>
-          <li>Producto 1</li>
-          <li>Producto 2</li>
-          <li>Producto 3</li>
-        </ul>
-      </section>
-    <footer>
-      <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Para más información, por favor contáctenos:</p>
-        <form>
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre"><br>
+        <div class="main-img">
+            <img src="#" alt="#">
+        </div>
+        <section id="productos">
+            <div class="matriz-contenedor">
+                <div class="seccion">
+                    <h2>NUESTROS PRODUCTOS</h2>
+                </div>
+            
+                <div class="matriz">
+                    <div class="item">Elemento 1</div>
+                    <div class="item">Elemento 2</div>
+                    <div class="item">Elemento 3</div>
+                    <div class="item">Elemento 4</div>
+                    <div class="item">Elemento 5</div>
+                </div>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email"><br>
+                <a href="archivo.pdf" download>
+                    <div class="descarga">
+                        Descargar PDF
+                    </div>
+                </a>
+                <div class="seccion">
+                    <h2>VISÍTANOS</h2>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <p>Para más información, por favor contáctenos:</p>
+                <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"><br>
 
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje"></textarea><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
 
-          <input type="submit" value="Enviar">
-        </form>
-      </section>
-    </footer>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea><br>
+
+                <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </footer>
     </main>
   </body>
 </html>
