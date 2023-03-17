@@ -12,11 +12,12 @@
     header {
         width: auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 
     header img {
+        max-width: 25%;
         margin: 2%;
         border-radius: 10px;        
     }
@@ -28,7 +29,7 @@
     }
     
     #search-input {
-        width: 200px;
+        width: 60%;
         padding: 8px;
         font-size: 16px;
         border: none;
@@ -36,7 +37,7 @@
     }
     
     #search-button {
-        padding: 8px;
+        padding: 3%;
         font-size: 16px;
         border: none;
         border-radius: 0 5px 5px 0;
@@ -45,25 +46,21 @@
         cursor: pointer;
     }
 
-    .under-top {
-        border: 1px solid black;
-
-    }
-
     nav {
         margin: 0;
     }
     nav ul {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         list-style: none;
+        grid-gap: 1%;
         padding: 0;
         justify-content: center;
     }
 
     nav li {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        margin: 0 5%;
+      text-align: center;
+        margin: 5% 2%;
     }
     
     nav a {
