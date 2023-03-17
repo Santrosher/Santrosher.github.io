@@ -130,14 +130,14 @@
     .matriz {
         display: grid;
         margin-top: 5%;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 5%;
     }
     
     .item {
         box-sizing: border-box;
         border: 2px dashed black;
-        padding: 20px;
+        padding: 10px;
         text-align: center;
         aspect-ratio: 1 / 1;    
     }
