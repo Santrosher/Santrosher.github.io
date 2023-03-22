@@ -265,13 +265,9 @@
         cursor: pointer;
       }
 
-    .under-top {
-        border: 1px solid black;
-
-    }
-
     nav {
       margin: 0;
+      box-sizing: content-box;
     }
     nav ul {
       display: flex;
@@ -281,16 +277,17 @@
     }
     nav li {
       margin: 1rem;
-
     }
     nav a {
       color: #00235B;
       text-decoration: none;
+      transition: 0.5s ease-in-out;
     }
 
     nav a:hover {
         color: red;
         font-size: large;
+        
     }
 
     main .main-img {
