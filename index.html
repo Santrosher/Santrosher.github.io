@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="scripts.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
-    
+    <link rel="icon" type="image/png" href="img/logo.png">
   </head>
   <body>
     <header>
@@ -20,9 +20,9 @@
         <nav>
             <ul>
                 <li><a href="index.html">INICIO</a></li>
-                <li><a href="#proyectos">PROYECTOS</a></li>
+                <li><a href="proyectos.html">PROYECTOS</a></li>
                 <li><a href="#soluciones">SOLUCIONES</a></li>
-                <li><a href="#contactos">CONTACTANOS</a></li>
+                <li><a href="#final-de-pagina">CONTACTANOS</a></li>
             </ul>
           </nav>
     </div>
@@ -54,7 +54,8 @@
                 </div>
             </div>
         </section>
-        <footer class="footer">
+        <div id="final-de-pagina">
+            <footer class="footer">
             <section class="contacto">
                 <h2>Para más información, por favor contáctenos:</h2>
                 <form>
@@ -70,8 +71,8 @@
                     <input type="submit" value="Enviar">
                 </form>
             </section>
-            
         </footer>
+        </div>
     </main>
     <script>
             document.getElementById("search-button").addEventListener("click", function() {
@@ -89,6 +90,16 @@
                 ScrollReveal().reveal('.contacto');
                 ScrollReveal().reveal('.contacto', 
                 { delay: 800, duration: 1000, distance: '100px', origin: 'left' });
+    </script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
     </script>
   </body>
 </html>
