@@ -5,6 +5,8 @@
     <title>HDF</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="scripts.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+    
   </head>
   <body>
     <header>
@@ -17,9 +19,9 @@
     <div class="under-top">
         <nav>
             <ul>
-                <li><a href="#inicio">INICIO</a></li>
-                <li><a href="#sede">SEDE</a></li>
-                <li><a href="#productos">PRODUCTOS</a></li>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="#proyectos">PROYECTOS</a></li>
+                <li><a href="#soluciones">SOLUCIONES</a></li>
                 <li><a href="#contactos">CONTACTANOS</a></li>
             </ul>
           </nav>
@@ -68,13 +70,25 @@
                     <input type="submit" value="Enviar">
                 </form>
             </section>
-            <script>
+            
+        </footer>
+    </main>
+    <script>
             document.getElementById("search-button").addEventListener("click", function() {
                 var searchQuery = document.getElementById("search-input").value;
                 window.location.href = "https://www.google.com/search?q=" + searchQuery;
                 });
-            </script>
-        </footer>
-    </main>
+    </script>
+    <script>
+                ScrollReveal().reveal('.descarga');
+                ScrollReveal().reveal('.descarga', 
+                { delay: 400, duration: 1000, distance: '50px', origin: 'left' });
+                ScrollReveal().reveal('#productos');
+                ScrollReveal().reveal('#productos', 
+                { delay: 400, duration: 1000, distance: '50px', origin: 'left' });
+                ScrollReveal().reveal('.contacto');
+                ScrollReveal().reveal('.contacto', 
+                { delay: 800, duration: 1000, distance: '100px', origin: 'left' });
+    </script>
   </body>
 </html>
