@@ -189,7 +189,8 @@
     nav a {
         color: #00235B;
         text-decoration: none;
-        padding: 0% 5%;
+        padding: 19% 5%;
+        transition: 0.35s ease-in-out;
     }
 
     nav a:hover {
@@ -237,7 +238,7 @@
     .projects-grid{
         display: grid;
         margin: 5% 3%;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-gap: 5%;
     }
 
