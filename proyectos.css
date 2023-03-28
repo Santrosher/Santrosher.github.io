@@ -60,14 +60,13 @@
 
     nav li {
       text-align: center;
-      margin: 1% 2%;
-      padding: 0 2%;
+        margin: 5% 2%;
     }
     
     nav a {
+        padding: 18%;
         color: #00235B;
         text-decoration: none;
-        padding: 19% 5%;
         transition: 0.35s ease-in-out;
     }
 
@@ -192,7 +191,8 @@
     nav a {
         color: #00235B;
         text-decoration: none;
-        padding: 0% 5%;
+        padding: 18% 5%;
+        transition: 0.35s ease-in-out;
     }
 
     nav a:hover {
